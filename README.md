@@ -104,7 +104,10 @@ These scripts are self-contained and do not read the Excel or CSV data. Each pro
   • DMS/DLS stackplots of decision-space dimensionality  
 
 - **phase_plot.py** → `phase_plot.pdf`, `line_analysis.pdf`  
-  • Phase diagram & summary line plots  
+  • Phase diagram & summary line plots
+
+- **ability_to_perform_tasks.py** → `ability_to_perform_tasks.pdf`
+  • Line plots of how shifts in DMS/DLS activity impact performance
 
 Run them in any order:
 ```bash
@@ -112,4 +115,5 @@ python3 perf_complexity.py
 python3 decision_maps.py
 python3 decision_space.py
 python3 phase_plot.py
+python3 ability_to_perform_tasks.py
 ```
