@@ -27,7 +27,7 @@ pip install pandas openpyxl numpy scipy seaborn matplotlib tqdm
 
 ## 0. Importing Excel files
 
-Before running the movement analysis, you must download the raw `.xlsx` files from [TBD] into the `Data/Raw_data/` folder.
+Before running the movement analysis, you must download the raw `.xlsx` files from the Harvard database (https://doi.org/10.7910/DVN/TNT3FV) into the `Data/Raw_data/` folder.
 
 1. Create the folder (if it doesn’t exist):
    ```bash
