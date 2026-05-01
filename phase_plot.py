@@ -34,10 +34,10 @@ Q_total    = Q_base_col + ghrelin_effect
 P_approach = sigmoid(Q_total, k=inverse_temp)
 
 cmap_rw = LinearSegmentedColormap.from_list("approach_avoid",
-                                            [(0.0, "#1B7837"),
+                                            [(0.0, "#762A83"),
                                              (0.4, "white"),
                                              (0.6, "white"),
-                                             (1.0, "#762A83")])
+                                             (1.0, "#1B7837")])
 
 fig1, ax1 = plt.subplots(figsize=(8, 5))
 im = ax1.imshow(P_approach, origin='lower', aspect='auto',
@@ -128,9 +128,9 @@ params = [
     ("n_dose_points",           n,                 "Grid resolution (dose axis)"),
     ("ctx_range",               "0 to 1",          "Context axis range"),
     ("dose_range",              "0 to 10",         "Dose axis range (arb. u.)"),
-    ("colormap",                "approach_avoid",  "LinearSegmentedColormap: #1B7837→white→white→#762A83"),
+    ("colormap",                "approach_avoid",  "LinearSegmentedColormap: #762A83→white→white→#1B7837"),
     ("cmap_stops",              "0.0, 0.4, 0.6, 1.0", "Colormap breakpoint positions"),
-    ("cmap_colors",             "#1B7837, white, white, #762A83", "Green→White→Purple (colorblind-safe)"),
+    ("cmap_colors",             "#762A83, white, white, #1B7837", "Purple→White→Green (colorblind-safe)"),
     ("vmin",                    0.0,               "Colormap normalization minimum"),
     ("vmax",                    1.0,               "Colormap normalization maximum"),
     ("contour_level",           0.5,               "Contour line drawn at P(Approach)=0.5"),
